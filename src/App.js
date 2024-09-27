@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react'
-import { SingleCoin, TrendingCoins } from '.././src/config.js/API';
+import { TrendingCoins } from '.././src/config.js/API';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import Carousel from './config.js/Carousel';
@@ -73,12 +73,6 @@ function App() {
           {ListVisible && <CoinList currency={currency}/>}
           {InfoVisible && <ShowInfo/>}
           
-     
-       
-       
-       
-      
-     
       </div>
       
     </div>
