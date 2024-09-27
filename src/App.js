@@ -35,6 +35,9 @@ function App() {
   useEffect(() => {
     fetchTrendingCoins();
   }, [currency]);
+  useEffect(() => {
+    fetchTrendingCoins();
+}, [fetchTrendingCoins]);
   
 
   return (
