@@ -1,0 +1,80 @@
+body{
+  background-color: black;
+  color:white;
+  font-family: "Source Code Pro", monospace;
+  
+}
+.carousel-container{
+  padding-top: 3vw ;
+  padding-bottom:3vw ;
+  
+  background-color:rgba(255, 255, 255, 0.291);
+  width: 100vw;
+ 
+  font-weight: bolder;
+  font-size: 20px;
+  text-align: center;
+}
+
+
+.navigation-list {
+text-align: center;
+}
+
+.nav-button {
+  font-weight: bolder !important;
+  font-size: 26px !important;
+  margin-bottom: 10px !important;
+  margin-top: 20px !important;
+ 
+ 
+}
+.nav-button:hover{
+  background-color: rgba(0, 21, 255, 0.271) !important;
+}
+.InfoText{
+ font-weight: 300;
+}
+.coin-list{
+  color:rgb(255, 255, 255);
+  margin-left: 1vw;
+  align-items: center;
+  justify-content: space-between; 
+  
+}
+.coin-list li{
+  text-align: left;
+  
+}
+.coin-price{
+  
+  position: absolute;
+  right:1vw;
+}
+.coin-ticker{
+  margin-left: 10px;
+  
+  opacity: 50%;
+
+  font-size: 15px;
+}
+.coin-name{
+  font-weight: 800;
+  font-size: 24px;
+}
+.coin-currency{
+  font-size: 30px;
+  width: 100px;
+  position: fixed;
+}
+.coin-image{
+  width: 30px;
+  margin-right: 10px;
+}
+.carousel-price{
+  font-size: 20px;
+  font-weight: 400;
+}
+.carousel-name{
+  font-size: 50px;
+}
