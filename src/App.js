@@ -14,19 +14,10 @@ function App() {
   const [currency, setCurrency] = useState('USD');
   const [InfoVisible, setInfoVisible] = useState(false);
   const [ListVisible, setListVisibility] = useState(false);
-  const [coin, setSingleCoin] = useState("btc")
-
-
-
- 
-
-
 
   const InfoVisibility = () =>{
     setInfoVisible(!InfoVisible)
     setListVisibility(false) 
-    
-    
   };
   const ListVisibility = () =>{
     setListVisibility(!ListVisible) 
@@ -44,16 +35,6 @@ function App() {
   useEffect(() => {
     fetchTrendingCoins();
   }, [currency]);
-  const fetchSingleCoin = async () => {
-    const { data } = await axios.get(SingleCoin(coin));
-    setSingleCoin(data);
-  };
-
-  useEffect(() => {
-    fetchTrendingCoins();
-  }, [coin]);
- 
- 
   
 
   return (
@@ -74,9 +55,7 @@ function App() {
               <div key={coin.id} className="carousel-item">
                 <img src={coin.image} alt={coin.name} />
                 <p className='carousel-name'>{coin.name}</p>
-                <p className='carousel-price'>{coin.current_price.toFixed(2)} {currency}</p>
-                
-                
+                <p className='carousel-price'>{coin.current_price.toFixed(2)} {currency}</p> 
               </div>
               
            
